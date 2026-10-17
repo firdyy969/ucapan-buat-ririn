@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Favorite Person ririnnn🤍</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #090909, #26131e, #090909);
+  color: white;
+  font-family: Georgia, serif;
+  text-align: center;
+  padding: 35px 20px;
+}
+
+.card {
+  max-width: 420px;
+  margin: auto;
+  padding: 25px 20px;
+  border: 1px solid #74505f;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.04);
+  box-shadow: 0 0 35px #a13c6220;
+}
+
+.heart {
+  color: #ff91b9;
+  font-size: 38px;
+  animation: beat 1.2s infinite;
+}
+
+@keyframes beat {
+  50% { transform: scale(1.18); }
+}
+
+h1 {
+  font-size: 29px;
+  font-weight: normal;
+  color: #ffd5e5;
+}
+
+p {
+  line-height: 1.9;
+  color: #eadde3;
+}
+
+.photo {
+  width: 100%;
+  max-height: 330px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: 15px 0;
+  border: 1px solid #74505f;
+}
+
+button {
+  padding: 12px 20px;
+  margin: 8px 4px;
+  border: 1px solid #eaa5c0;
+  border-radius: 30px;
+  background: #51263b;
+  color: white;
+  font-size: 14px;
+}
+
+#surprise {
+  display: none;
+  margin-top: 20px;
+}
+
+footer {
+  color: #bfa7b1;
+  font-size: 12px;
+  margin-top: 25px;
+}
+</style>
+</head>
+
+<body>
+<div class="card">
+
+  <div class="heart">♥</div>
+
+  <p> A LITTLE WEBSITE, firdyy sayangg ririnn </p>
+
+  <h1>For My pacarrr ririnnn</h1>
+
+  <p>
+    haii sayangg 🤍<br>
+    aku punya sesuatu buat kamuu...
+  </p>
+
+  <!-- Ganti foto.jpg dengan foto kamu -->
+  <img src="IMG-20260916-WA0040.jpg" class="photo"
+       alt="Foto kenangan kita">
+
+  <h2>Dear, My Love</h2>
+
+  <p>
+    sayanggg ririnn cintakuuu, makasiii yaa udah hadir di hidup akuuu, makasiii udah jadi bagian terindah dari hari-hari akuuu. aku harapp kita bisa terus sama-sama yaa sayangg, bukan cuma di saat semuanya terasa indahh, tapi juga di saat kita lagi capekk, lagi banyak pikiran, atau lagi ada masalahh. aku mau kita sama-sama belajar buat saling ngerti, saling dengerin, saling menghargai, dan saling memperbaiki diri. aku tauu kita berdua masih punya banyak kekurangan, tapi aku harapp kita nggak gampang nyerah cuma karena keadaan lagi nggak baik-baik ajaa. kalau nanti ada sesuatu yang bikin kamu sedihh, cerita sama akuu yaa sayangg, jangan dipendem sendirian. aku pengen jadi seseorang yang bisa kamu percaya, seseorang yang bisa kamu ajak cerita tanpa takut dihakimi. aku sayanggg banget sama kamu, ririnnn, dan aku harapp kamu mau terus jalan bareng akuu, kita bikin banyak kenangan indahh, kita tumbuh sama-sama, dan kita belajar jadi lebih baik setiap harinyaa. aku nggak minta hubungan kita selalu sempurna, aku cuma mau kita sama-sama punya niat buat menjaga apa yang udah kita punya sekarang. i want you to know that you mean so much to me, sayangg. semoga kita selalu punya alasan buat bertahan, saling memilih, dan saling membahagiakan. aku sayang kamu, ririnnn, hari ini, besok, dan semoga masih banyak hari-hari berikutnya yang bisa kita lewatin bersamaaa 🤍
+
+    <br><br>
+
+    kalau suatu hari kamu capek,
+    jangan lupa kalau kamu juga
+    pantas buat istirahat dan disayang.
+    aku harap kamu selalu punya alasan
+    buat tersenyum setiap harinya.
+
+    <br><br>
+
+    dari sekian banyak hal indah di dunia,
+    aku bersyukur bisa kenal kamu.
+    semoga kita terus belajar memahami,
+    menghargai, dan menjaga satu sama lain.
+
+    <br><br>
+
+    i love you, always 🤍
+  </p>
+
+  <!-- Musik mulai setelah tombol ditekan -->
+  <audio id="music" src="my love.mp3"
+         loop></audio>
+
+  <button onclick="toggleMusic()">
+    ♫ Play / Pause Lagu
+  </button>
+
+  <br>
+
+  <button onclick="showSurprise()">
+    Buka kejutan 🤍
+  </button>
+
+  <div id="surprise">
+    <div class="heart">♡</div>
+    <h2>One More Thing...</h2>
+    <p>
+      dari semua cerita yang aku punya,
+      aku senang kalau kamu jadi bagian
+      dari cerita-cerita berikutnya.
+      jaga diri baik-baik yaa, sayangg.
+      you mean a lot to me. 🤍
+    </p>
+  </div>
+
+  <footer>
+    firdyy sayang bangett sama ririnn, i lovee youu moree sayangg♡
+  </footer>
+
+</div>
+
+<script>
+function toggleMusic() {
+  const music = document.getElementById("music");
+
+  if (music.paused) {
+    music.play().catch(() => {
+      alert("Coba tekan tombol musik sekali lagi yaa.");
+    });
+  } else {
+    music.pause();
+  }
+}
+
+function showSurprise() {
+  document.getElementById("surprise").style.display = "block";
+}
+</script>
+
+</body>
+</html>
